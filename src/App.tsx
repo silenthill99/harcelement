@@ -9,7 +9,7 @@ import { Bonus } from './Pages/Bonus';
 
 function App() {
   return (
-    <div className='mx-10 mb-20'>
+    <div className='mb-20'>
       <nav className='flex justify-center p-2'>
         <NavLink to="" className="bg-[red] text-white p-1 hover:px-5 duration-300 m-1 hover:bg-[orange]">Accueil</NavLink>
         <NavLink to="clips" className="bg-[red] text-white p-1 hover:px-5 duration-300 m-1 hover:bg-[orange]">Clips</NavLink>
@@ -22,6 +22,7 @@ function App() {
         <Route path='courts_metrages' element={<CourtsMetrages/>}/>
         <Route path='bonus' element={<Bonus/>}/>
       </Routes>
+      
     </div>
   );
 }
