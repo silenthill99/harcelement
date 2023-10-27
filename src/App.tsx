@@ -6,21 +6,24 @@ import { Home } from './Pages/Home';
 import { Clips } from './Pages/Clips';
 import { CourtsMetrages } from './Pages/Courts Métrages';
 import { Bonus } from './Pages/Bonus';
+import { NousContacter } from './Pages/Nous Contacter';
 
 function App() {
   return (
     <div className='mb-20'>
-      <nav className='flex justify-center p-2'>
-        <NavLink to="" className="bg-[red] text-white p-1 hover:px-5 duration-300 m-1 hover:bg-[orange]">Accueil</NavLink>
-        <NavLink to="clips" className="bg-[red] text-white p-1 hover:px-5 duration-300 m-1 hover:bg-[orange]">Clips</NavLink>
-        <NavLink to="courts_metrages" className="bg-[red] text-white p-1 hover:px-5 duration-300 m-1 hover:bg-[orange]">Courts métrages</NavLink>
-        <NavLink to="bonus" className="bg-[red] text-white p-1 hover:px-5 duration-300 m-1 hover:bg-[orange]">Bonus</NavLink>
+      <nav className='flex justify-center p-2 gap-2'>
+        <NavLink to="" className="bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange]">Accueil</NavLink>
+        <NavLink to="clips" className="bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange]">Clips</NavLink>
+        <NavLink to="courts_metrages" className="bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange]">Courts métrages</NavLink>
+        <NavLink to="bonus" className="bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange]">Bonus</NavLink>
+        <NavLink to="nous_contacter" className="bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange]">Nous contacter</NavLink>
       </nav>
       <Routes>
         <Route path='' element={<Home/>}/>
         <Route path='clips' element={<Clips/>}/>
         <Route path='courts_metrages' element={<CourtsMetrages/>}/>
         <Route path='bonus' element={<Bonus/>}/>
+        <Route path='nous_contacter' element={<NousContacter/>}/>
       </Routes>
       
     </div>
