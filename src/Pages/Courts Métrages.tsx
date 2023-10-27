@@ -17,8 +17,13 @@ export const CourtsMetrages = () => {
                 <Videos id="UCLHuEYHlBA" name="Option AIS - Couleur alcool - Court Métrage contre le harcèlement scolaire"/>
                 <Videos id="NekbISTowB0" name="SAVONNETTE - Court Métrage Harcèlement Scolaire"/>
                 <Videos id="sQhBRcNxayw" name="Film sur le harcelement scolaire - Lisa"/>
+                <div className="col-span-2">
+                    <Videos id="4mx8KIU0xyY" name="HARCÈLEMENT Court-métrage film complet 01700 OUF collège adolescence jugement"/>
+                </div>
+                <Videos id="LNecBrnE9TA" name="Harcèlement Ado collège"/>
+                <Videos id="rcJf-tgknsY" name="Parle. - Court-métrage sur le harcèlement scolaire [ENG/SPA/DEU sub] [School bullying/Acoso escolar]"/>
             </section>
-            <section className="bg-[#1F2039]">
+            <section className="bg-[#1F2039] pb-10">
                 <p className="font-bold text-3xl m-10 text-[#a5b4fc] text-center">Quelques reportages</p>
                 <div className="grid grid-cols-2 text-[white] gap-11">
                     <Videos id="M7RTYiXeNUg" name="HARCELÉS A L'ÉCOLE, ILS SORTENT DU SILENCE"/>
