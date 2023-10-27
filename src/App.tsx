@@ -12,11 +12,11 @@ function App() {
   return (
     <div className='mb-20'>
       <nav className='flex justify-center p-2 gap-2'>
-        <NavLink to="" className="bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange]">Accueil</NavLink>
-        <NavLink to="clips" className="bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange]">Clips</NavLink>
-        <NavLink to="courts_metrages" className="bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange]">Courts métrages</NavLink>
-        <NavLink to="bonus" className="bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange]">Bonus</NavLink>
-        <NavLink to="nous_contacter" className="bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange]">Nous contacter</NavLink>
+        <NavLink to="" className="bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full">Accueil</NavLink>
+        <NavLink to="clips" className="bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full">Clips</NavLink>
+        <NavLink to="courts_metrages" className="bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full">Courts métrages</NavLink>
+        <NavLink to="bonus" className="bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full">Bonus</NavLink>
+        <NavLink to="nous_contacter" className="bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full">Nous contacter</NavLink>
       </nav>
       <Routes>
         <Route path='' element={<Home/>}/>

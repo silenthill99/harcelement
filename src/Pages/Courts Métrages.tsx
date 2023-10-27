@@ -4,6 +4,7 @@ export const CourtsMetrages = () => {
     document.title = "Courts métrages"
     return(
         <div>
+            <h1 className="text-center p-10">Quelques courts métrages</h1>
             <p className="text-center">Sur cette page, vous y trouverez toute une floppée de courts métrages évoquant le harcèlement scolaire. Néanmoins, il vaut savoir qu'en raison du sujet qui est très délicat, certains d'entre eux finissent mal.</p>
             <section className="grid grid-cols-2 gap-2 mb-20">
                 <Videos id="5Nxjwau7aEY" name="DANS NOS YEUX- Court métrage"/>
@@ -14,6 +15,8 @@ export const CourtsMetrages = () => {
                 <Videos id="LZNuM_AMNQc" name="PUZZLE - COURT-MÉTRAGE 2021 (harcèlement scolaire)"/>
                 <Videos id="6FMoiGghce4" name="GRAVE ! (Harcèlement scolaire)"/>
                 <Videos id="UCLHuEYHlBA" name="Option AIS - Couleur alcool - Court Métrage contre le harcèlement scolaire"/>
+                <Videos id="NekbISTowB0" name="SAVONNETTE - Court Métrage Harcèlement Scolaire"/>
+                <Videos id="sQhBRcNxayw" name="Film sur le harcelement scolaire - Lisa"/>
             </section>
             <section className="bg-[#1F2039]">
                 <p className="font-bold text-3xl m-10 text-[#a5b4fc] text-center">Quelques reportages</p>
