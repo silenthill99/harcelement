@@ -7,6 +7,7 @@ import { Clips } from './Pages/Clips';
 import { CourtsMetrages } from './Pages/Courts Métrages';
 import { Bonus } from './Pages/Bonus';
 import { NousContacter } from './Pages/Nous Contacter';
+import { QuelquesFilms } from './Pages/Quelques films';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <NavLink to="clips" className="bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full">Clips</NavLink>
         <NavLink to="courts_metrages" className="bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full">Courts métrages</NavLink>
         <NavLink to="bonus" className="bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full">Bonus</NavLink>
+        <NavLink to='quelques_films' className="bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full">Quelques films</NavLink>
         <NavLink to="nous_contacter" className="bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full">Nous contacter</NavLink>
       </nav>
       <Routes>
@@ -23,6 +25,7 @@ function App() {
         <Route path='clips' element={<Clips/>}/>
         <Route path='courts_metrages' element={<CourtsMetrages/>}/>
         <Route path='bonus' element={<Bonus/>}/>
+        <Route path='quelques_films' element={<QuelquesFilms/>}/>
         <Route path='nous_contacter' element={<NousContacter/>}/>
       </Routes>
       
