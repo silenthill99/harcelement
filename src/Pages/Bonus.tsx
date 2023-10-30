@@ -2,7 +2,6 @@ import { Videos } from "../Utils/Videos"
 
 export const Bonus = () => {
     document.title = "Bonus"
-    console.log("Essai")
     return(
         <div>
             <div className="flex flex-col items-center">
