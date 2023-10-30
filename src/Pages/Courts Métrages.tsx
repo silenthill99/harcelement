@@ -22,6 +22,10 @@ export const CourtsMetrages = () => {
                 </div>
                 <Videos id="LNecBrnE9TA" name="Harcèlement Ado collège"/>
                 <Videos id="rcJf-tgknsY" name="Parle. - Court-métrage sur le harcèlement scolaire [ENG/SPA/DEU sub] [School bullying/Acoso escolar]"/>
+                <div className="row-span-2">
+                    <Videos id ="lq_rIomTOoA" name="Même pas en rêve ! Lycée Ernest Ferroul - Non au Harcèlement"/>
+                </div>
+                <Videos id="AjCKSGUy148" name="Court métrage <<L'indifférence tue>> prix <<Non au harcèlement>> 2021"/>
             </section>
             <section className="bg-[#1F2039] pb-10">
                 <p className="font-bold text-3xl m-10 text-[#a5b4fc] text-center">Quelques reportages</p>
