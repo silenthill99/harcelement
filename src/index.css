@@ -20,14 +20,16 @@ nav{
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+ 
 h1 {
-  font-size: 1.875rem;
-  font-weight: 800;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  font-weight: bold;
 }
 
 h2 {
-  font-size: 1.5em; /* 24px */
+  font-size: 1.5em;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   font-weight: bold;
