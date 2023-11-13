@@ -8,17 +8,21 @@ import { CourtsMetrages } from './Pages/Courts Métrages';
 import { Bonus } from './Pages/Bonus';
 import { NousContacter } from './Pages/Nous Contacter';
 import { QuelquesFilms } from './Pages/Quelques films';
+import { PageLinks } from './Utils/PageLinks';
+import { link } from 'fs';
 
 function App() {
+
+  const link = PageLinks;
+
   return (
     <div className='mb-20'>
       <nav className='flex justify-center p-2 gap-2'>
-        <NavLink to="" className={(nav) => (nav.isActive ? "underline bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full" : "bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full")}>Accueil</NavLink>
-        <NavLink to="clips" className={(nav) => (nav.isActive ? "underline bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full" : "bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full")}>Clips</NavLink>
-        <NavLink to="courts_metrages" className={(nav) => (nav.isActive ? "underline bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full" : "bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full")}>Courts métrages</NavLink>
-        <NavLink to="bonus" className={(nav) => (nav.isActive ? "underline bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full" : "bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full")}>Bonus</NavLink>
-        <NavLink to='quelques_films' className={(nav) => (nav.isActive ? "underline bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full" : "bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full")}>Quelques films</NavLink>
-        <NavLink to="nous_contacter" className={(nav) => (nav.isActive ? "underline bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full" : "bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full")}>Nous contacter</NavLink>
+        {
+          link.map((links) => (
+            <NavLink to={links.links} className={(nav) => (nav.isActive ? "underline bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full" : "bg-[red] text-white p-1 hover:px-5 duration-300 hover:bg-[orange] hover:rounded-full")} key={links.name}>{links.name}</NavLink>
+          ))
+        }
       </nav>
       <Routes>
         <Route path='' element={<Home/>}/>
